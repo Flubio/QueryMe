@@ -47,7 +47,7 @@ client.on('message', msg => {
     }
   } else if (pref.startsWith('?queries')) {
     msg.reply(sendQueries());
-  } else if (pref.startsWith('$code')) {
+  } else if (pref.startsWith('?code')) {
     msg.reply(createEmbed('Here\'s the GitHub Repo', 'https://github.com/flubio/QueryMe'));
   } else if (pref.startsWith('?help')) {
     msg.reply(createEmbed('Command Help', '?help \n `shows this page` \n\n' +
