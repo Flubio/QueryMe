@@ -1,5 +1,6 @@
 const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '\.env') });
+console.log(__dirname);
+require('dotenv').config({ path: __dirname + '/.env' });
 const secret = process.env.secret;
 const { Client, MessageEmbed } = require('discord.js');
 const client = new Client();
