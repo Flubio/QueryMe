@@ -1,4 +1,5 @@
-require('dotenv').config();
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '\.env') });
 const secret = process.env.secret;
 const { Client, MessageEmbed } = require('discord.js');
 const client = new Client();
@@ -15,7 +16,7 @@ client.on('message', msg => {
 
   const pref = msg.content;
   if (pref.startsWith('*')) {
-    console.log('(Query_Req: [' + msg.author.username + ']) ' + msg.content);
+    console.log('(Query_Req: [' + msg.author.username + ' @ ' + msg.guild.name + ']) ' + msg.content);
     const cutMsg = msg.content.split(' ');
     const query = cutMsg.shift();
     if (cutMsg.length <= 0 && queries.includes(query.slice(1))) {
