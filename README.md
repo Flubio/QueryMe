@@ -1,3 +1,4 @@
+[![CodeAnalysis](https://github.com/Flubio/QueryMe/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/Flubio/QueryMe/actions/workflows/codeql-analysis.yml)
 ### QueryMe
 This is a simple Discord bot wich is currently just sending query Links for requests
 
