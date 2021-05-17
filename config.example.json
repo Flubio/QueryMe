@@ -1,0 +1,9 @@
+{
+  "token": "discord.bot.token",
+  "admins": [
+    "list all admins here"
+  ],
+  "hookID": "webhook.id",
+  "hookToken": "webhook.token",
+  "shards": 1
+}
